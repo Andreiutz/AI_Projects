@@ -81,11 +81,14 @@ def get_duplicate(array):
 
 def get_majoritar(numbers):
     n = len(numbers)
-    freqs = 10 * [0]
+    freqs = {}
     for num in numbers:
-        freqs[num] = freqs[num] + 1
-        if freqs[num] > n // 2:
-            return num
+        if num not in freqs.keys():
+            freqs[num] = 1
+        else:
+            freqs[num] = freqs[num] + 1
+            if freqs[num] > n // 2:
+                return num
     return -1
 
 

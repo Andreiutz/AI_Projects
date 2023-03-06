@@ -46,6 +46,7 @@ def test_06():
     assert lab_01.get_majoritar([1, 2, 3, 3, 3]) == 3
     assert lab_01.get_majoritar([1, 2, 3, 4, 5, 6]) == -1
     assert lab_01.get_majoritar([2, 8, 7, 2, 2, 5, 2, 3, 1, 2, 2]) == 2
+    assert lab_01.get_majoritar([10, 11, 12, 13, 13, 13, 13]) == 13
     print("Test_06 Success")
 
 
